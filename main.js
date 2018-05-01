@@ -13,8 +13,8 @@ if (answer !== 'no') {
         if (playersHealth >= 1 && grantsHealth >= 1) {
             console.log(`${name} has ${playersHealth} health.`);
             console.log(`Grant has ${grantsHealth} health.`);
-            playersHealth -= Math.floor(Math.random() * 2) + 1;
-            grantsHealth -= Math.floor(Math.random() * 2) + 1;
+            playersHealth -= Math.floor(Math.random() * 2 + 1);
+            grantsHealth -= Math.floor(Math.random() * 2 + 1);
             console.log(`${name} has ${playersHealth} left.`);
             console.log(`Grant has ${grantsHealth} left.`);
         } else if (playersHealth <= 0) {
@@ -32,4 +32,6 @@ if (answer !== 'no') {
     } else if (grantsWins === 1) {
         console.log("Grant has won!");
     }
+} else {
+    console.log("Goodbye")
 }
